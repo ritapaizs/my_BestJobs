@@ -1,0 +1,349 @@
+
+/*container principal*/
+#Main
+{
+    height:100%;
+    background-color:whitesmoke;
+}
+
+/*poza bestjobs si servici*/
+#header
+{
+height:50px;
+}
+#bestjobs
+{
+    height:40px;
+    float:left;
+}
+#serviciu-clienti {
+   margin-left:52%;
+    width:305px;
+    color:grey;
+    height:40px;
+
+}
+#serviciu-clienti:hover
+{
+    color:grey;
+    background-color: #eaeaea;
+}
+#serviciu{
+    color:grey;
+    margin-top:20px;
+}
+
+
+
+/*partea superioara*/
+.blue
+{
+
+    background-image:url('https://ss.bestjobs.eu/img/landing/ppa/bg_hero_landing.png');
+    height:345px;
+}
+
+.top
+{
+
+
+    width:1500px;
+    margin:auto;
+    height:250px;
+    color : white;
+
+
+}
+
+#om
+{
+    height:300px;
+    margin-right:35%;
+    float:right;
+}
+#body
+{
+    width:100%;
+}
+#creareCont
+{
+
+    color : white;
+    width:140px;
+    height:40px;
+    background-color: #6ea50c;
+}
+/*sfarsit parte superioara*/
+
+
+
+/*panelul cu cutii*/
+#panel-poze
+{
+    background-color: white;
+    margin-left:10%;
+    width: 1100px;
+
+    -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0,0.1);
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+
+
+}
+
+#cutie-sus
+{
+    margin-top:-4%;
+    border: 1px solid grey;
+}
+#cutie-jos
+{
+    background-color:#f1f5fa;
+    border: 1px solid grey;
+    height:200px;
+
+}
+
+#item
+{
+    margin-left:10%;
+    float:left;
+    width : 350px;
+    height:500px;
+}
+#img1
+{
+    width: 350px;
+}
+
+#item2
+{
+
+    margin-right:10%;
+    float:right;
+    height: 500px;
+    width : 350px;
+}
+
+
+
+#img2
+{
+    width: 350px;
+}
+
+#item3
+{
+
+    margin-left:10%;
+    width : 350px;
+    height: 400px;
+}
+#img3
+{
+    width: 350px;
+}
+#item4
+{
+
+    height: 500px;
+    margin-right:10%;
+    float:right;
+    width : 350px;
+}
+#img4
+{
+
+    width: 350px;
+}
+
+.item5
+{
+
+    margin: auto;
+    width : 350px;
+}
+#img5
+{
+    width: 350px;
+}
+
+#item6
+{
+
+    text-align: center;
+    width : 1100px;
+}
+
+
+#creareCont2
+{
+    margin:auto;
+    color : white;
+    width:140px;
+    height:40px;
+    background-color: #6ea50c;
+}
+
+/*sfarsit cutiute*/
+
+#scroll
+{
+
+}
+.scroll-down-core
+{
+
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    border: 2px solid #255daa;
+    color: #255daa;
+    margin-top: -38px;
+    left: 50%;
+    margin-left: -38px;
+    z-index: 3;
+    background-color: #fff;
+    line-height: 76px;
+
+}
+
+/*footer*/
+footer {
+
+    width: 100%;
+    height:60px;
+    background-color: white;
+    color: black;
+    margin-top:10px;
+    border:1px grey;
+    display:inline-block;
+}
+footer nav
+{
+    float:left;
+
+
+}
+footer nav ul{
+
+}
+footer nav ul li{
+    display:inline-block;
+    margin-left:20px;
+    list-style:none;
+
+
+}
+footer nav ul li a{
+    font-size:14px;
+    font-weight:400;
+    color:grey;
+
+
+}
+.social
+{
+    float:right;
+    margin-right:30%;
+}
+#btn
+{
+    width:30px;
+    height:30px;
+
+}
+
+/*-------------LANGUAGE DE PE SITE-------------------------*/
+#id_language_button{
+    height:10px;
+    width: 10px;
+    margin-top:-10px;
+}
+
+#id_language_btn_link{
+    height:10px;
+    width: 10px;
+
+}
+.btn-group, .btn-group-vertical {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropdown-content {
+    margin-left:50%;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    height:10px;
+    width:10px;
+}
+.flag
+{
+    width:inherit;
+    height:inherit;
+}
+.btn-group dropup
+{
+    width:10px;
+    height:10px;
+
+}
+.btn .caret {
+    margin-left: 0;
+}
+ .dropup .caret, .navbar-fixed-bottom  .caret {
+    border-top: 0;
+    border-bottom: 4px dashed;
+    border-bottom: 4px solid \9;
+    content: "";
+}
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-top: 4px solid \9;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 8px 10px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+a {
+    color: #1264c6;
+    text-decoration: none;
+}
+
+/*-------------LANGUAGE DE PE SITE-------------------------*/
+output {
+    display: inline;
+}

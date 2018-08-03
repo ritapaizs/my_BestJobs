@@ -1,0 +1,45 @@
+#containerM
+ {
+     background-color:lightgrey;
+    height:100%;
+    width:100%;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+
+ }
+#logoBestJobs
+{
+    height:40px;
+    float:left;
+}
+#headerJob
+{
+    height:40px;
+    width:100%;
+    background-color:#224D89;
+
+
+}
+#image
+{
+    width:100px;
+
+
+}
+#jobs
+{
+
+    width:300px;
+    color:lightskyblue;
+    height:40px;
+    font-size:14px;
+}
+#btn
+{
+    height:40px;
+    width:100px;
+}
+#jobs:hover
+{
+
+
+}

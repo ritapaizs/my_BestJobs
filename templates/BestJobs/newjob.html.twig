@@ -1,0 +1,93 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <div id="containerM" class="container" >
+
+
+        <div id="headerJob" class="container">
+
+            <div id ="image" class="image">
+                <img src="https://ss.bestjobs.eu/img/bestjobs-logo.png" alt="Bestjobs" id="logoBestJobs">
+            </div>
+            <div id="btn" class="btn">
+                <a href="/job/new" id = "jobs">
+                    adauga job
+                </a>
+            </div>
+
+
+        </div>
+
+        <div class="container m-t-lg">
+            {{ form_start(form) }}
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.title) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.title, {'attr': {'class': 'col-md-12', 'required':false}}) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.descriere) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.descriere, {'attr': {'class': 'col-md-12'}}) }}
+                </div>
+            </div>
+            {# <div class="row">
+                <div class="col-md-4">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ form_label(form.salariumin) }}
+                        </div>
+                        <div class="col-md-12">
+                            {{ form_widget(form.salariumin, {'type':'number', 'attr': {'class': 'col-md-12', 'placeholder': 'Aici bagi cati bani vrei minim'}}) }}
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            {{ form_label(form.salariumax) }}
+                        </div>
+                        <div class="col-md-12">
+                            {{ form_widget(form.salariumax, {'attr': {'class': 'col-md-12'}}) }}
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>#}
+
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.locatii) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.locatii, {'attr': {'class': 'col-md-12'}}) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2 offset-md-10">
+                    <button class="btn btn-lg btn-success" id="butonuldesubmit" type="submit">Activeaza</button>
+                </div>
+
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+        <script>
+            /* $(document).ready(function(){
+                 $("#butonuldesubmit").click(function(){
+                     $(".vreausadisparaasta").hide();
+                 });
+             });*/
+        </script>
+
+
+    </div>
+{% endblock %}
