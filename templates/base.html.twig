@@ -3,16 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}Plata pe aplicanti{% endblock %}</title>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     {% block stylesheets %}
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/landing.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('/css/job.css') }}">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+       {# <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">#}
+
     {% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
     <link rel="icon" type="image/x-icon" href="https://ss.bestjobs.eu/favicon.ico">
 
 
@@ -26,9 +32,6 @@
 {% block javascripts %}{% endblock %}
 <script>
     $( document ).ready(function() {
-        /*console.log( "ready!" );
-        alert("document is ready");
-        confirm("Press a button!");*/
         calculateWindowHeight();
     });
 

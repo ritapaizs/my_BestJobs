@@ -148,3 +148,9 @@ output {
     -webkit-box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
     box-shadow: 2px 7px 8px rgba(0, 0, 0, .5);
 }
+#dropup
+{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+}
