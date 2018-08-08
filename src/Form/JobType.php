@@ -9,6 +9,7 @@ namespace App\Form;
 use App\Entity\Job;
 
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
+use Symfony\Component\Form\Extension\Core\Type\TextareaType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -28,12 +29,14 @@ class JobType extends AbstractType
 
         $form
             ->add('title', TextType::class)
-            ->add('descriere', TextType::class)
-         //   ->add('salariumin', TextType::class)
-          //  ->add('salariumax', TextType::class)
-            ->add('locatii', TextType::class)
-            ->add("save", SubmitType::Class)
-            ->getForm();
+            ->add('locatie', TextType::class)
+            ->add('description', TextareaType::class)
+//            ->add('SalariuMin', TextType::class, array(
+//                'required' => false,
+//                'label' => 'Salariu in in Euro'
+//            ))
+//            ->add('SalariuMax', TextType::class)
+        ;
 
         $form->addEventListener(FormEvents::PRE_SET_DATA, function (FormEvent $event) {
             // ... adding the name field if needed

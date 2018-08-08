@@ -1,0 +1,26 @@
+<header>
+    <div id="headerJob" class="header">
+        <div class="container">
+            <div id="image" class="image">
+                <a href="{{ path('app_job_list') }}">
+                    <img src="https://ss.bestjobs.eu/img/bestjobs-logo.png" alt="Bestjobs" id="logoBestJobs">
+                </a>
+            </div>
+
+
+            {{ form_start(form) }}
+            {#{{ form_start(form, {'action': path('app_job_keyword', {'keyword' : keyword}), 'method': 'POST', 'attr': {'id':'search'}}) }}#}
+            <div class="row">
+                <div class="col-md-6" id="searchbar">
+                    {{ form_widget(form.keyword, {'attr': {'class': 'col-md-12'}}) }}
+                </div>
+
+                <div class="col-md-2 text-right" id="searchbtn">
+                    {{ form_widget(form.cauta) }}
+                </div>
+            </div>
+
+            {{ form_end(form) }}
+        </div>
+    </div>
+</header>
