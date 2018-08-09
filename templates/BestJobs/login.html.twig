@@ -1,0 +1,19 @@
+{% if error is defined %}
+{% if error %}
+    <div>{{ error.message }}</div>
+{% endif %}
+{% endif %}
+
+  {% block body %}
+<form action="{{ path('login') }}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="_username" />
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="_password" />
+
+    <input type="hidden" name="_target_path" value="account" />
+
+    <input type="submit" name="login" />
+</form>
+  {% endblock %}

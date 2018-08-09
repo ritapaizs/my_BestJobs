@@ -1,0 +1,60 @@
+{% extends 'base3.html.twig' %}
+{% block body %}
+
+
+
+    <div id="base" class="container">
+        <img class="centre" src="https://ss.bestjobs.eu/img/bj-logo-blue.png" alt="bestjobs" id="logoRegister">
+        <div id="form1">
+        {{ form_start(form) }}
+
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.username) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.username, {'attr': {'class': 'col-md-12 btn-block'}}) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.email) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.email, {'attr': {'class': 'col-md-12 btn-block'}}) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.plainPassword.first) }}
+                </div>
+                <div class="col-md-12">
+                    {{ form_widget(form.plainPassword.first, {'attr': {'class': 'col-md-12 btn-block'}}) }}
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-12">
+                    {{ form_label(form.plainPassword.second) }}
+                </div>
+                <div class="col-md-12 ">
+                    {{ form_widget(form.plainPassword.second, {'attr': {'class': 'col-md-12 btn-block'}}) }}
+                </div>
+            </div>
+
+            <div class="row">
+                <div id="btnregister" class="col-md-12">
+                    <button class="btn btn-md btn-block btn-success" id="butonuldesubmit" type="submit">Register!</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+{{ form_end(form) }}
+    </div>
+{% endblock %}

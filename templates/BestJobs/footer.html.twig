@@ -43,7 +43,7 @@
         {#</nav>#}
     {#</div>#}
 
-        <div class="col-lg-9 col-md-8 col-sm-10 col-xs-12 text-lg-right text-center">
+        <div id="textfooter" class="col-sm-5 col-sm-8 col-sm-10 col-xs-12 text-lg-right text-center">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="/ro/hartasite/joburi" class="text-muted">
@@ -82,15 +82,15 @@
         {% set langlist = ['ro', 'hu', 'it', 'de', 'fr', 'en', 'sr'] %}
         <div class="dropup" id="dropup">
             <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <img src="https://ss.bestjobs.eu/img/flags/ro.png" class="flag">
+                <img id="ro" src="https://ss.bestjobs.eu/img/flags/ro.png" class="flag">
                 <small>RO</small>
                 <span class="caret"></span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
                 {% for lang in langlist %}
-                    <a class="dropdown-item" href="https://www.bestjobs.eu/{{ lang }}/landing/aplicanti-garantati">
-                        <img src="https://ss.bestjobs.eu/img/flags/{{ lang }}.png" class="flag">
+                    <a class="dropdown-item" href="https://www.bestjobs.eu/{{ lang }}/landing/aplicanti-garantati" id="dropdrop">
+                        <img id="limbi" src="https://ss.bestjobs.eu/img/flags/{{ lang }}.png" class="flag">
                         <small>{{ lang|upper }}</small>
                     </a><br>
                 {% endfor %}

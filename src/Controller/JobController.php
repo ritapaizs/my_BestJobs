@@ -64,7 +64,7 @@ class JobController extends Controller
         ));
     }
     /**
-     * @Route("/locuri-de-munca", name="app_job_list")
+     * @Route("/locuri-de-munca", name="c")
      * @Route("/locuri-de-munca/{keyword}", name="app_job_keyword")
      *
      *

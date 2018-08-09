@@ -1,31 +1,27 @@
 {% extends 'base3.html.twig' %}
+
+{% block masterHeader %}
+
+{% endblock %}
 {% block body %}
+    <div id="headerJob" class="header">
 
-
-
-
-
-
-
-        <div id="headerJob" class="header">
-
-            <div id ="image" class="image">
+    <div class="container">
+        <div id="image" class="image">
+            <a href="{{ path('app_job_list') }}">
                 <img src="https://ss.bestjobs.eu/img/bestjobs-logo.png" alt="Bestjobs" id="logoBestJobs">
-            </div>
+            </a>
+        </div>
 
-            <div id="btn" class="btn">
-                <a href="/job/new" id = "jobs">
-                    adauga job
-                </a>
-            </div>
-
-
+        <div id="btn" class="btn">
+            <a href="/job/new" id = "jobs">
+                adauga job
+            </a>
         </div>
 
 
-
-
-
+    </div>
+    </div>
     <div class="container m-t-lg" id="form">
         {{ form_start(form) }}
         <div class="row">
@@ -95,6 +91,6 @@
              });
          });*/
     </script>
-
+    {% include 'BestJobs/footer.html.twig' %}
 
 {% endblock %}

@@ -47,7 +47,7 @@ height:50px;
 {
 
 
-    width:1500px;
+
     margin:auto;
     height:250px;
     color : white;
@@ -81,8 +81,7 @@ height:50px;
 #panel-poze
 {
     background-color: white;
-    margin-left:10%;
-    width: 1100px;
+
 
     -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0,0.1);
     -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
@@ -92,14 +91,19 @@ height:50px;
 
 #cutie-sus
 {
-    margin-top:-4%;
+background-color: white;
+    margin-top:-6.5%;
+    margin-left:-12px;
     border: 1px solid grey;
+    position:relative;
 }
 #cutie-jos
 {
+    margin-left:-12px;
     background-color:#f1f5fa;
     border: 1px solid grey;
     height:200px;
+    position:relative;
 
 }
 

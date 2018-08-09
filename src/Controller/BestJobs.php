@@ -23,14 +23,4 @@ class BestJobs extends AbstractController
       //  return $this->render('BestJobs/base.html.twig');
     }
 
-
-    /**
-     * @Route("/register")
-     */
-    public function logare()
-    {
-        return $this->render('BestJobs/logare.html.twig',['title'=>'logare']);
-    }
-
-
 }
